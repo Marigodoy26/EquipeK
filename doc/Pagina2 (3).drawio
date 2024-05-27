@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-05-27T14:40:54.845Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="hZTAiuZr2zNugdZSxLOB" version="24.4.9" type="device">
+  <diagram name="Página-1" id="sULU3iYHnRQg7r0w8pIC">
+    <mxGraphModel dx="1434" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-2" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="229" y="-410" width="370" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-3" value="nome do fornecedor" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="-230" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-4" value="endereço" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="-170" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-5" value="produto" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="-50" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-7" value="numero de telefone" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="-110" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-8" value="atualizar" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="10" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DESoHfq3_l1B5G4YQXHP-10" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="326" y="-360" width="176" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
