@@ -24,7 +24,7 @@ public class Produto
         return NomedaOP;
     }
 
-     public void NomeTecido (string NT)
+     public void SetNomeTecido (string NT)
     {
        NomeTecido= NT; 
     }
@@ -33,65 +33,65 @@ public class Produto
         return NomeTecido;
     }
 
-     public void QuantidadeTecido (string QT)
+     public void SetQuantidadeTecido (string QT)
     {
        QuantidadeTecido= QT; 
     }
-    public string QuantidadeTecido()
+    public string GetQuantidadeTecido()
     {
         return QuantidadeTecido;
     }
 
-     public void Preco (string P)
+     public void SetPreco (string P)
     {
        Preco= P; 
     }
-    public string Preco()
+    public string GetPreco()
     {
         return Preco;
     }
 
-     public void Linha (string L)
+     public void SetLinha (string L)
     {
        Linha= L; 
     }
-    public string Linha()
+    public string GetLinha()
     {
         return Linha;
     }
 
-     public void Aviamento (string A)
+     public void SetAviamento (string A)
     {
        Aviamento= A; 
     }
-    public string Aviamento()
+    public string GetAviamento()
     {
         return Aviamento;
     }
 
-    public void Cortador (string C)
+    public void SetCortador (string C)
     {
        Cortador= C; 
     }
-    public string Cortador()
+    public string GetCortador()
     {
         return Cortador;
     }
 
-    public void Estampa (string E)
+    public void SetEstampa (string E)
     {
        Estampa= E; 
     }
-    public string Estampa()
+    public string GetEstampa()
     {
         return Estampa;
     }
 
-    public void Grade (string G)
+    public void SetGrade (string G)
     {
        Grade= G; 
     }
-    public string Grade()
+    public string GetGrade()
     {
         return Grade;
     }
