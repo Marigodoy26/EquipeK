@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquipeK.TelaFornecedor">
+
+    <ScrollView>
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="Center">
+            
+            <!-- Início Button -->
+            <Button Text="Início"
+                    BackgroundColor="White"
+                    TextColor="Purple"
+                    CornerRadius="50"
+                    WidthRequest="150"
+                    HeightRequest="70"
+                    BorderColor="Black"
+                    BorderWidth="1" />
+            
+            <StackLayout Spacing="20" Padding="0,30,0,0">
+                <!-- Cliente Button -->
+                <Button Text="Cliente"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="60" />
+
+                <!-- Fornecedor Button -->
+                <Button Text="Fornecedor"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="60" />
+
+                <!-- Matéria-prima Button -->
+                <Button Text="Matéria-prima"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="60" />
+
+                <!-- Setores Button -->
+                <Button Text="Setores"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="60" />
+
+                <!-- Pedidos Button -->
+                <Button Text="Pedidos"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="60" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
