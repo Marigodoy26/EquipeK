@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquipeK.TelaFornecedor"
+             Title="Fornecedor">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Text="Fornecedor"
+               FontSize="Title"
+               HorizontalTextAlignment="Center"
+               Grid.Row="0" />
+
+        <SearchBar Placeholder="Buscar"
+                   Grid.Row="1" />
+
+        <TableView Grid.Row="2">
+            <TableSection>
+                <TableRow>
+                    <TextCell Text="Cod" />
+                    <TextCell Text="Fornecedor" />
+                    <TextCell Text="Telefone" />
+                </TableRow>
+                </TableSection>
+        </TableView>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Voltar"
+                    Grid.Column="0" />
+            <Button Text="Cadastrar"
+                    Grid.Column="1" />
+            <Button Text="Continuar"
+                    Grid.Column="2" />
+        </Grid>
+    </Grid>
+</ContentPage>
