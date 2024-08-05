@@ -18,7 +18,7 @@ public class Almoxarifado
 
       public void SetMateria (string M)
     {
-       Materia.= M; 
+       Materia= M; 
     }
     public string GetMateria()
     {

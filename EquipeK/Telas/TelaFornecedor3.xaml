@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquipeK.TelaFornecedor3">
+
+    <ScrollView>
+        <StackLayout Padding="30" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+            
+            <!-- Fornecedor Button/Label -->
+            <Button Text="Fornecedor"
+                    BackgroundColor="White"
+                    TextColor="Purple"
+                    CornerRadius="30"
+                    WidthRequest="150"
+                    HeightRequest="70"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HorizontalOptions="Center" />
+
+            <!-- Buscar Entry -->
+            <Entry Placeholder="Buscar"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   BorderColor="Black"
+                   BorderWidth="1"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+            <!-- Data Grid -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Header Row -->
+                <Label Text="Cod" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
+                <Label Grid.Column="1" Text="Fornecedor" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
+                <Label Grid.Column="2" Text="Telefone" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
+
+                <!-- Data Rows -->
+                <!-- Repeat as needed for each row, consider using a ListView or CollectionView for dynamic data -->
+                <Label Grid.Row="1" Text="1" BorderColor="Black" BorderWidth="1" />
+                <Label Grid.Row="1" Grid.Column="1" Text="Example Fornecedor" BorderColor="Black" BorderWidth="1" />
+                <Label Grid.Row="1" Grid.Column="2" Text="123456789" BorderColor="Black" BorderWidth="1" />
+                <!-- Add more rows as needed -->
+
+            </Grid>
+
+            <!-- Confirmation Box -->
+            <Frame BackgroundColor="White" BorderColor="Black" CornerRadius="30" Padding="20" Margin="20">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Image Source="warning.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
+                    <Label Text="Tem certeza que deseja voltar!" TextColor="Red" HorizontalOptions="Center" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                        <Button Text="Sim"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                BorderColor="Black"
+                                BorderWidth="1"
+                                CornerRadius="15"
+                                WidthRequest="70"
+                                HeightRequest="50"
+                                Clicked="OnSimButtonClicked" />
+                        <Button Text="Não"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                BorderColor="Black"
+                                BorderWidth="1"
+                                CornerRadius="15"
+                                WidthRequest="70"
+                                HeightRequest="50"
+                                Clicked="OnNaoButtonClicked" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Bottom Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Button Text="Voltar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnVoltarButtonClicked" />
+                <Button Text="Cadastrar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnCadastrarButtonClicked" />
+                <Button Text="Continuar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnContinuarButtonClicked" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
