@@ -6,7 +6,6 @@
     <ScrollView>
         <StackLayout Padding="30" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
             
-            <!-- Fornecedor Button/Label -->
             <Button Text="Fornecedor"
                     BackgroundColor="White"
                     TextColor="Purple"
@@ -17,16 +16,12 @@
                     BorderWidth="1"
                     HorizontalOptions="Center" />
 
-            <!-- Buscar Entry -->
             <Entry Placeholder="Buscar"
                    BackgroundColor="White"
                    TextColor="Black"
-                   BorderColor="Black"
-                   BorderWidth="1"
                    WidthRequest="200"
                    HorizontalOptions="Center" />
 
-            <!-- Data Grid -->
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -38,21 +33,19 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Header Row -->
-                <Label Text="Cod" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
-                <Label Grid.Column="1" Text="Fornecedor" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
-                <Label Grid.Column="2" Text="Telefone" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" />
+                
+                <Label Text="Cod" FontAttributes="Bold" />
+                <Label Grid.Column="1" Text="Fornecedor" FontAttributes="Bold" />
+                <Label Grid.Column="2" Text="Telefone" FontAttributes="Bold" />
 
-                <!-- Data Rows -->
-                <!-- Repeat as needed for each row, consider using a ListView or CollectionView for dynamic data -->
-                <Label Grid.Row="1" Text="1" BorderColor="Black" BorderWidth="1" />
-                <Label Grid.Row="1" Grid.Column="1" Text="Example Fornecedor" BorderColor="Black" BorderWidth="1" />
-                <Label Grid.Row="1" Grid.Column="2" Text="123456789" BorderColor="Black" BorderWidth="1" />
-                <!-- Add more rows as needed -->
+                
+                <Label Grid.Row="1" Text="1"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="Example Fornecedor"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="123456789"/>
+               
 
             </Grid>
 
-            <!-- Confirmation Box -->
             <Frame BackgroundColor="White" BorderColor="Black" CornerRadius="30" Padding="20" Margin="20">
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                     <Image Source="warning.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
@@ -80,7 +73,6 @@
                 </StackLayout>
             </Frame>
 
-            <!-- Bottom Buttons -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
                 <Button Text="Voltar"
                         BackgroundColor="White"

@@ -3,7 +3,7 @@ namespace Modelos;
 public class Estoque
 {
     string Quantidade;
-    string Clinte;
+    string Cliente;
     string NumerodaOP;
      Int64 Id;
 
@@ -18,7 +18,7 @@ public class Estoque
 
       public void SetCliente (string C)
     {
-       Clinte= C; 
+       Cliente= C; 
     }
     public string GetCliente()
     {

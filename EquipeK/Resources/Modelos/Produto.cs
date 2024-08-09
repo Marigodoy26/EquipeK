@@ -2,11 +2,11 @@ namespace Modelos;
 
 public class Produto
 {
-    string NumerodaOP;
+    string NomedaOP;
     string NomeTecido;
     string QuantidadeTecido;
     string Preco;
-    string Linhaa;
+    string Linha;
     string Aviamento;
     string Cortador;
     string Estampa;

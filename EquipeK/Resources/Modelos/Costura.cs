@@ -17,7 +17,7 @@ public class Costura
 
     public void SetAviamento (string A)
     {
-        Aviamento= A
+        Aviamento= A;
     }
     public string GetAviamento ()
     {

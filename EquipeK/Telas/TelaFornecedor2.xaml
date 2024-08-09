@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EquipeK.TelaFornecedor"
+             x:Class="EquipeK.TelaFornecedor2"
              Title="Fornecedor">
     <Grid>
         <Grid.RowDefinitions>
@@ -18,15 +18,6 @@
         <SearchBar Placeholder="Buscar"
                    Grid.Row="1" />
 
-        <TableView Grid.Row="2">
-            <TableSection>
-                <TableRow>
-                    <TextCell Text="Cod" />
-                    <TextCell Text="Fornecedor" />
-                    <TextCell Text="Telefone" />
-                </TableRow>
-                </TableSection>
-        </TableView>
 
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
