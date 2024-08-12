@@ -1,36 +1,13 @@
+using LiteDB;
+
 namespace Modelos;
 
 public class Costura
 {
-    string Quantidade;
-    string Aviamento;
-    string NumeroOP;
+    string Quantidade { get; set; }
+    string Aviamento { get; set; }
+    string NumeroOP { get; set; }
 
-    public void SetQuantidade (string QT)
-    {
-       Quantidade= QT; 
-    }
-    public string GetQuantidade()
-    {
-        return Quantidade;
-    }
-
-    public void SetAviamento (string A)
-    {
-        Aviamento= A;
-    }
-    public string GetAviamento ()
-    {
-        return Aviamento;
-    }
-
-    public void SetNumeroOP (string N)
-    {
-       NumeroOP= N; 
-    }
-    public string GetNumeroOP()
-    {
-        return NumeroOP;
-    }
-    
+    [BsonId]
+  Int64 Id { get; set; }
 }

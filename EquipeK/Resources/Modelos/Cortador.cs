@@ -1,16 +1,11 @@
+using LiteDB;
+
 namespace Modelos;
 
 public class Cortador
 {
-    string Nome;
+    string Nome { get; set; }
 
-     public void SetNome (string N)
-    {
-       Nome= N; 
-    }
-    public string GetNome()
-    {
-        return Nome;
-    }
-
+     [BsonId]
+  Int64 Id { get; set; }
 }
