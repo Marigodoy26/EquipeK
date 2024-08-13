@@ -1,36 +1,15 @@
+using LiteDB;
+
 namespace Modelos;
 
 public class MateriaPrima
 {
-    string Nome;
-    string Tipo;
-    string Valor;
-    string Unidade;
-    string IdMateria;
+    string Nome { get; set; }
+    string Tipo { get; set; }
+    string Valor { get; set; }
+    string Unidade { get; set; }
+    string IdMateria { get; set; }
 
-     Int64 Id;
-
-      public void SetNome (string N)
-    {
-       Nome= N; 
-    }
-    public string GetNome()
-    {
-        return Nome;
-    }
-
-      public void SetTipo (string T)
-    {
-       Tipo= T; 
-    }
-    public string GetTipo()
-    {
-        return Tipo;
-    }
-
-
-
-
-
-
+    [BsonId]
+     Int64 Id { get; set; }
 }

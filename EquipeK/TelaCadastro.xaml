@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquipeK.TelaFCadastro">
+
+    <ScrollView>
+        <StackLayout Padding="30" 
+         Spacing="20" 
+         VerticalOptions="Center" 
+         HorizontalOptions="Center">
+            
+            <!-- Fornecedor Button/Label -->
+            <Button Text="Fornecedor"
+                    BackgroundColor="White"
+                    TextColor="Purple"
+                    CornerRadius="30"
+                    WidthRequest="150"
+                    HeightRequest="70"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HorizontalOptions="Center" />
+
+            <!-- Name Entry with Icon -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="user_icon.png" 
+                 WidthRequest="30" 
+                 HeightRequest="30" />
+
+                <Entry Grid.Column="1" Placeholder="Nome:"
+                       BackgroundColor="White"
+                       TextColor="Black"
+                       WidthRequest="200" />
+            </Grid>
+
+            <!-- Email Entry -->
+            <Entry Placeholder="Email"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+            <!-- Telephone Entry -->
+            <Entry Placeholder="Telf"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+            <!-- CPF Entry -->
+            <Entry Placeholder="CPF"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+            <!-- Endereço Entry -->
+            <Entry Placeholder="End"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+            <!-- Bottom Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            
+                <Button Text="Voltar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnVoltarButtonClicked" />
+
+                <Button Text="Atualizar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnAtualizarButtonClicked" />
+
+                <Button Text="Continuar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="OnContinuarButtonClicked" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

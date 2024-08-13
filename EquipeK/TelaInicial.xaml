@@ -19,6 +19,7 @@
             <StackLayout Spacing="20" Padding="0,30,0,0">
                 <!-- Cliente Button -->
                 <Button Text="Cliente"
+
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -29,6 +30,7 @@
 
                 <!-- Fornecedor Button -->
                 <Button Text="Fornecedor"
+                        Clicked="Telafornecedor"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -39,6 +41,7 @@
 
                 <!-- Matéria-prima Button -->
                 <Button Text="Matéria-prima"
+
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -49,6 +52,7 @@
 
                 <!-- Setores Button -->
                 <Button Text="Setores"
+       
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"

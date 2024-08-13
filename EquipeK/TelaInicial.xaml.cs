@@ -10,10 +10,10 @@ namespace EquipeK
             InitializeComponent();
         }
 
-        private void OnInicioButtonClicked(object sender, EventArgs e)
+       private void Telafornecedor(object sender, EventArgs args)
         {
-            // Handle "Início" button click event
-            DisplayAlert("Início", "Início button clicked", "OK");
+            if (Application.Current != null)
+            Application.Current.MainPage = new TelaFornecedor2();
         }
 
         private void OnClienteButtonClicked(object sender, EventArgs e)
