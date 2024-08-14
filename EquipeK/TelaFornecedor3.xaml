@@ -51,6 +51,7 @@
                     <Image Source="warning.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
                     <Label Text="Tem certeza que deseja voltar!" TextColor="Red" HorizontalOptions="Center" />
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+
                         <Button Text="Sim"
                                 BackgroundColor="White"
                                 TextColor="Black"
@@ -60,6 +61,7 @@
                                 WidthRequest="70"
                                 HeightRequest="50"
                                 Clicked="OnSimButtonClicked" />
+
                         <Button Text="Não"
                                 BackgroundColor="White"
                                 TextColor="Black"
@@ -83,6 +85,7 @@
                         WidthRequest="100"
                         HeightRequest="50"
                         Clicked="OnVoltarButtonClicked" />
+
                 <Button Text="Cadastrar"
                         BackgroundColor="White"
                         TextColor="Black"
@@ -92,6 +95,7 @@
                         WidthRequest="100"
                         HeightRequest="50"
                         Clicked="OnCadastrarButtonClicked" />
+
                 <Button Text="Continuar"
                         BackgroundColor="White"
                         TextColor="Black"
@@ -101,6 +105,7 @@
                         WidthRequest="100"
                         HeightRequest="50"
                         Clicked="OnContinuarButtonClicked" />
+                        
             </StackLayout>
         </StackLayout>
     </ScrollView>

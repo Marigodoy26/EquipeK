@@ -1,3 +1,4 @@
+
 using Microsoft.Maui.Controls;
 using System;
 
@@ -39,5 +40,6 @@ namespace EquipeK
             // Handle "Continuar" button click event
             DisplayAlert("Continuar", "Continuar button clicked", "OK");
         }
+
     }
 }
