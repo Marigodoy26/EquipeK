@@ -20,46 +20,31 @@
                     BorderWidth="1"
                     HorizontalOptions="Center" />
 
-            <!-- Name Entry with Icon -->
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Image Source="user_icon.png" 
-                 WidthRequest="30" 
-                 HeightRequest="30" />
-
-                <Entry Grid.Column="1" Placeholder="Nome:"
-                       BackgroundColor="White"
-                       TextColor="Black"
-                       WidthRequest="200" />
-            </Grid>
-
-            <!-- Email Entry -->
-            <Entry Placeholder="Email"
+              <Entry Placeholder="Nome"
                    BackgroundColor="White"
                    TextColor="Black"
                    WidthRequest="200"
                    HorizontalOptions="Center" />
 
-            <!-- Telephone Entry -->
-            <Entry Placeholder="Telf"
+              <Entry Placeholder="Email"
                    BackgroundColor="White"
                    TextColor="Black"
                    WidthRequest="200"
                    HorizontalOptions="Center" />
 
-            <!-- CPF Entry -->
-            <Entry Placeholder="CPF"
+              <Entry Placeholder="Telf"
                    BackgroundColor="White"
                    TextColor="Black"
                    WidthRequest="200"
                    HorizontalOptions="Center" />
 
-            <!-- Endereço Entry -->
-            <Entry Placeholder="End"
+              <Entry Placeholder="CPF"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" />
+
+              <Entry Placeholder="End"
                    BackgroundColor="White"
                    TextColor="Black"
                    WidthRequest="200"

@@ -27,11 +27,26 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="Voltar"
-                    Grid.Column="0" />
+                Grid.Column="0" 
+                BackgroundColor="Pink"
+                FontSize="16"
+                TextColor="Black"
+                Clicked="VoltarClicked"/>
+
             <Button Text="Cadastrar"
-                    Grid.Column="1" />
+                Grid.Column="1"
+                BackgroundColor="Pink"
+                FontSize="16"
+                TextColor="Black"
+                Clicked="CadastrarClicked" />
+
             <Button Text="Continuar"
-                    Grid.Column="2" />
+                Grid.Column="2"
+                BackgroundColor="Pink"
+                FontSize="16"
+                TextColor="Black"
+                Clicked="ContinuarClicked" />
+
         </Grid>
     </Grid>
 </ContentPage>

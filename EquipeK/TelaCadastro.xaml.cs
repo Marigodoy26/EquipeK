@@ -1,14 +1,39 @@
+
+using Android.Service.Controls;
 using Microsoft.Maui.Controls;
+using Modelos;
 using System;
 
 namespace EquipeK
 {
     public partial class TelaFCadastro : ContentPage
-    {
+     {
+        public Fornecedor fornecedor { get; set; }
+        Control.ControleFornecedor controlefornecedor = new Control.ControleFornecedor();
+
         public TelaFCadastro()
         {
             InitializeComponent();
         }
+
+        void VoltarClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new TelaInicial();
+        }
+
+                protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (cliente != null)
+            {
+            IdLabel.Text        = fornecedor.Id.ToString();
+            NomeEntry.Text      = fornecedor.Nome;
+            EmailEntry.Text     = fornecedor.Email;
+            TelfEntry.Text      = fornecedor.Telf;
+            }
+        }
+
 
         private void OnVoltarButtonClicked(object sender, EventArgs e)
         {
@@ -28,7 +53,7 @@ namespace EquipeK
             DisplayAlert("Continuar", "Continuar button clicked", "OK");
         }
 
-         private async Task<bool> VerificaSeDadosEstaoCorretos()
+         private async Task<bool>                                       s()
         {
             // Verifica se a Entry do Nome está vazia
             if (String.IsNullOrEmpty(NomeEntry.Text))
@@ -37,13 +62,13 @@ namespace EquipeK
             return false;
             }
             // Verifica se a Entry do Sobrenome está vazia
-            else if (String.IsNullOrEmpty(SobrenomeEntry.Text))
+            else if (String.IsNullOrEmpty(EmailEntry.Text))
             {
             await DisplayAlert("Cadastrar", "O campo Sobrenome é obrigatório", "OK");
             return false;
             }
             // Verifica se a Entry do Telefone está vazia
-            else if (String.IsNullOrEmpty(TelefoneEntry.Text))
+            else if (String.IsNullOrEmpty(TelfEntry.Text))
             {
             await DisplayAlert("Cadastrar", "O campo Telefone é obrigatório", "OK");
             return false;
