@@ -9,7 +9,7 @@ namespace EquipeK
     public partial class TelaFCadastro : ContentPage
      {
         public Fornecedor fornecedor { get; set; }
-        Control.ControleFornecedor controlefornecedor = new Control.ControleFornecedor();
+        Controle.ControleFornecedor controlefornecedor = new Control.ControleFornecedor();
 
         public TelaFCadastro()
         {
