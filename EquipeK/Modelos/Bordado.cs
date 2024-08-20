@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Bordado
+public class Bordado : Registro
 {
   string Quantidade { get; set; }
   string Linha { get; set; }

@@ -1,44 +1,37 @@
-
-using Android.Service.Controls;
 using Microsoft.Maui.Controls;
-using Modelos;
 using System;
+using System.Threading.Tasks;
 
 namespace EquipeK
 {
-    public partial class TelaFCadastro : ContentPage
-     {
+    public partial class TelaCadastro : ContentPage
+    {
         public Fornecedor fornecedor { get; set; }
-        Controle.ControleFornecedor controlefornecedor = new Control.ControleFornecedor();
+        ControleFornecedor controlefornecedor = new ControleFornecedor();
 
-        public TelaFCadastro()
+        public TelaCadastro()
         {
             InitializeComponent();
         }
 
-        void VoltarClicked(object sender, EventArgs e)
+        private void OnVoltarButtonClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new TelaInicial();
+            Application.Current.MainPage = new TelaInicialPage(); // Certifique-se de que esta classe existe e está correta
         }
 
-                protected override void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            if (cliente != null)
+            if (fornecedor != null)
             {
-            IdLabel.Text        = fornecedor.Id.ToString();
-            NomeEntry.Text      = fornecedor.Nome;
-            EmailEntry.Text     = fornecedor.Email;
-            TelfEntry.Text      = fornecedor.Telf;
+                // Verifique se você tem os controles apropriados no XAML
+                NomeEntry.Text = fornecedor.Nome;
+                EmailEntry.Text = fornecedor.Email;
+                TelfEntry.Text = fornecedor.Telf;
+                CPFfEntry.Text = fornecedor.CPF;
+                EndEntry.Text = fornecedor.End;
             }
-        }
-
-
-        private void OnVoltarButtonClicked(object sender, EventArgs e)
-        {
-            // Handle "Voltar" button click event
-            DisplayAlert("Voltar", "Voltar button clicked", "OK");
         }
 
         private void OnAtualizarButtonClicked(object sender, EventArgs e)
@@ -53,28 +46,32 @@ namespace EquipeK
             DisplayAlert("Continuar", "Continuar button clicked", "OK");
         }
 
-         private async Task<bool>                                       s()
+        private async Task<bool> ValidateEntriesAsync()
         {
-            // Verifica se a Entry do Nome está vazia
-            if (String.IsNullOrEmpty(NomeEntry.Text))
+            if (string.IsNullOrEmpty(NomeEntry.Text))
             {
-            await DisplayAlert("Cadastrar", "O campo Nome é obrigatório", "OK");
-            return false;
+                await DisplayAlert("Cadastrar", "O campo Nome é obrigatório", "OK");
+                return false;
             }
-            // Verifica se a Entry do Sobrenome está vazia
-            else if (String.IsNullOrEmpty(EmailEntry.Text))
+            else if (string.IsNullOrEmpty(EmailEntry.Text))
             {
-            await DisplayAlert("Cadastrar", "O campo Sobrenome é obrigatório", "OK");
-            return false;
+                await DisplayAlert("Cadastrar", "O campo Email é obrigatório", "OK");
+                return false;
             }
-            // Verifica se a Entry do Telefone está vazia
-            else if (String.IsNullOrEmpty(TelfEntry.Text))
+            else if (string.IsNullOrEmpty(TelfEntry.Text))
             {
-            await DisplayAlert("Cadastrar", "O campo Telefone é obrigatório", "OK");
-            return false;
+                await DisplayAlert("Cadastrar", "O campo Telefone é obrigatório", "OK");
+                return false;
             }
             else
-            return true;
+            {
+                return true;
+            }
         }
+    }
+
+    // Certifique-se de que esta classe existe e herda de ContentPage
+    internal class TelaInicialPage : ContentPage
+    {
     }
 }

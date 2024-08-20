@@ -1,15 +1,12 @@
-
 using Modelos;
 namespace Controle
 {
-    public class ControlePedido : ControleBase
+    public class ControleCliente : BaseControle
     {
-        public override void criar (Registro o)
-        {
-        }
-        public override void atualizar (Registro o)
-        {
-        }
+        public virtual void CriarOuAtualizar(Registro r)
+         {
+         }
+         
         public override void apagar (int id)
         {
         }
@@ -18,4 +15,5 @@ namespace Controle
             return null;
         }
     }
+
 }

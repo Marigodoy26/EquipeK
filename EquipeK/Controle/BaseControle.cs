@@ -1,3 +1,5 @@
+using LiteDB;
+using Modelos;
 namespace Controle;
 
 public class BaseControle
@@ -14,16 +16,20 @@ public class BaseControle
       liteDB = new LiteDatabase(@"filename=" + pathToPersonalFolder + "; upgrade=true; Mode=Exclusive");
   }
 
-  public virtual void CriarOuAtualizar(Registro r)
+  public virtual void criar(Registro r)
   {
   }
   
 
-  public virtual void Apagar(int id)
+  public virtual void apagar(int id)
   {
   }
 
-  public virtual Registro? Ler(int id)
+  public virtual void atualizar(int id)
+    {
+                }
+
+  public virtual Registro? ler(int id)
   {
     return null;
   }

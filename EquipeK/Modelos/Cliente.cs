@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Cliente
+public class Cliente : Registro
 {
     string Nome { get; set; }
     string Email { get; set; }

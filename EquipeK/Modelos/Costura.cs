@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Costura
+public class Costura : Registro
 {
     string Quantidade { get; set; }
     string Aviamento { get; set; }

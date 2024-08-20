@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Produto
+public class Produto : Registro
 {
     string NomedaOP { get; set; }
     string NomeTecido { get; set; }

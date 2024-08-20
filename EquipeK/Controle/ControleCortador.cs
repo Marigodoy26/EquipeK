@@ -1,14 +1,12 @@
 using Modelos;
 namespace Controle
 {
-    public class ControleFornecedor : ControleBase
+    public class ControleCortador : BaseControle
     {
-        public override void criar (Registro o)
-        {
-        }
-        public override void atualizar (Registro o)
-        {
-        }
+      public virtual void CriarOuAtualizar(Registro r)
+         {
+         }
+         
         public override void apagar (int id)
         {
         }
@@ -17,4 +15,7 @@ namespace Controle
             return null;
         }
     }
-}
+
+    
+
+    }       

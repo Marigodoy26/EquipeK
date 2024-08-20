@@ -2,7 +2,8 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Pedidos
+public class Pedidos : Registro
+
 {
     string Nome { get; set; }
     string Email { get; set; }
