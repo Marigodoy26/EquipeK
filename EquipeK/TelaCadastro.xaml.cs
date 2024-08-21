@@ -1,4 +1,6 @@
+using Controle;
 using Microsoft.Maui.Controls;
+using Modelos;
 using System;
 using System.Threading.Tasks;
 
@@ -28,9 +30,9 @@ namespace EquipeK
                 // Verifique se você tem os controles apropriados no XAML
                 NomeEntry.Text = fornecedor.Nome;
                 EmailEntry.Text = fornecedor.Email;
-                TelfEntry.Text = fornecedor.Telf;
+                TelfEntry.Text = fornecedor.Telefone;
                 CPFfEntry.Text = fornecedor.CPF;
-                EndEntry.Text = fornecedor.End;
+                EndEntry.Text = fornecedor.Endereco;
             }
         }
 

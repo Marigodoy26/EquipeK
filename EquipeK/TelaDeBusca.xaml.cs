@@ -27,5 +27,12 @@ namespace EquipeK
             // Handle "Continuar" button click event
             DisplayAlert("Continuar", "Continuar button clicked", "OK");
         }
+        void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
+        {
+            var page = new CadastroClientePage();
+            page.cliente = e.SelectedItem as Cliente;
+            Application.Current.MainPage = page;
+        }
+
     }
 }
