@@ -8,7 +8,7 @@ namespace EquipeK
 {
     public partial class TelaCadastro : ContentPage
     {
-        public Fornecedor fornecedor { get; set; }
+        public Cliente cliente { get; set; }
         ControleFornecedor controlefornecedor = new ControleFornecedor();
 
         public TelaCadastro()
@@ -25,14 +25,13 @@ namespace EquipeK
         {
             base.OnAppearing();
 
-            if (fornecedor != null)
+            if (cliente != null)
             {
-                // Verifique se você tem os controles apropriados no XAML
-                NomeEntry.Text = fornecedor.Nome;
-                EmailEntry.Text = fornecedor.Email;
-                TelfEntry.Text = fornecedor.Telefone;
-                CPFfEntry.Text = fornecedor.CPF;
-                EndEntry.Text = fornecedor.Endereco;
+                Nome.Text = cliente.Nome;
+                Email.Text = cliente.Email;
+                Telefone.Text = cliente.Telefone;
+                CPF.Text = cliente.CPF;
+                Endereco.Text = cliente.Endereco;
             }
         }
 
@@ -50,21 +49,33 @@ namespace EquipeK
 
         private async Task<bool> ValidateEntriesAsync()
         {
-            if (string.IsNullOrEmpty(NomeEntry.Text))
+            if (string.IsNullOrEmpty(Nome.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Nome é obrigatório", "OK");
                 return false;
             }
-            else if (string.IsNullOrEmpty(EmailEntry.Text))
+            else if (string.IsNullOrEmpty(Email.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Email é obrigatório", "OK");
                 return false;
             }
-            else if (string.IsNullOrEmpty(TelfEntry.Text))
+            else if (string.IsNullOrEmpty(Telefone.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Telefone é obrigatório", "OK");
                 return false;
             }
+
+            else if (string.IsNullOrEmpty(CPF.Text))
+           {
+                await DisplayAlert("Cadastrar", "O campo Email é obrigatório", "OK");
+                return false;
+           }
+            else if (string.IsNullOrEmpty(Endereco.Text))
+           {
+                await DisplayAlert("Cadastrar", "O campo Email é obrigatório", "OK");
+                return false;
+           }
+
             else
             {
                 return true;

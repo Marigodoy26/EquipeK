@@ -20,35 +20,35 @@
                        BorderWidth="1"
                        HorizontalOptions="Center"/>
 
-               <Entry x:Name="NomeEntry"
+               <Entry x:Name="Nome"
                       Placeholder="Nome"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="EmailEntry"
+               <Entry x:Name="Email"
                       Placeholder="Email"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="TelfEntry"
+               <Entry x:Name="Telefone"
                       Placeholder="Telf"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="CPFfEntry"
+               <Entry x:Name="CPF"
                       Placeholder="CPF"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="EndEntry"
+               <Entry x:Name="Endereco"
                       Placeholder="End"
                       BackgroundColor="White"
                       TextColor="Black"

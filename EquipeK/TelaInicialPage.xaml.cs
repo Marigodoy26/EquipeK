@@ -3,47 +3,42 @@ using System;
 
 namespace EquipeK
 {
-    public partial class TelaFornecedor : ContentPage
+    public partial class TelaInicial : ContentPage
     {
-        public TelaFornecedor()
+        public TelaInicial()
         {
             InitializeComponent();
         }
 
-       private void Telafornecedor(object sender, EventArgs args)
+       private void TelaDeBusca(object sender, EventArgs args)
         {
             if (Application.Current != null)
-            Application.Current.MainPage = new TelaFornecedor2();
+            Application.Current.MainPage = new TelaInicial();
         }
 
-        private void OnClienteButtonClicked(object sender, EventArgs e)
+        private void buttonCliente(object sender, EventArgs e)
         {
-            // Handle "Cliente" button click event
-            DisplayAlert("Cliente", "Cliente button clicked", "OK");
+           Application.Current.MainPage = new TelaDeBusca();
         }
 
-        private void OnFornecedorButtonClicked(object sender, EventArgs e)
+        private void buttonFornecedor(object sender, EventArgs e)
         {
-            // Handle "Fornecedor" button click event
-            DisplayAlert("Fornecedor", "Fornecedor button clicked", "OK");
+           Application.Current.MainPage = new TelaDeBusca();
         }
 
-        private void OnMateriaPrimaButtonClicked(object sender, EventArgs e)
+        private void buttonMateriaprima(object sender, EventArgs e)
         {
-            // Handle "Matéria-prima" button click event
-            DisplayAlert("Matéria-prima", "Matéria-prima button clicked", "OK");
+           Application.Current.MainPage = new TelaDeBusca();
         }
 
-        private void OnSetoresButtonClicked(object sender, EventArgs e)
+        private void buttonSetores(object sender, EventArgs e)
         {
-            // Handle "Setores" button click event
-            DisplayAlert("Setores", "Setores button clicked", "OK");
+           Application.Current.MainPage = new TelaDeBusca();
         }
 
-        private void OnPedidosButtonClicked(object sender, EventArgs e)
+        private void buttonPedidos(object sender, EventArgs e)
         {
-            // Handle "Pedidos" button click event
-            DisplayAlert("Pedidos", "Pedidos button clicked", "OK");
+           Application.Current.MainPage = new TelaDeBusca();
         }
     }
 }

@@ -1,11 +1,12 @@
 using Microsoft.Maui.Controls;
+using Modelos;
 using System;
 
 namespace EquipeK
 {
-    public partial class TelaFornecedor2 : ContentPage
+    public partial class TelaDeBusca : ContentPage
     {
-        public TelaFornecedor2()
+        public TelaDeBusca()
         {
             InitializeComponent();
         }
@@ -29,7 +30,7 @@ namespace EquipeK
         }
         void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
         {
-            var page = new CadastroClientePage();
+            var page = new TelaCadastro();
             page.cliente = e.SelectedItem as Cliente;
             Application.Current.MainPage = page;
         }

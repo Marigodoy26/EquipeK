@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
 	private void TelaCadastro(object sender, EventArgs args)
   {
     if (Application.Current != null)
-      Application.Current.MainPage = new TelaFornecedor();
+      Application.Current.MainPage = new TelaInicial();
   }
 }
 

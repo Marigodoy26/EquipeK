@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EquipeK.TelaFornecedor">
+             x:Class="EquipeK.TelaInicial">
 
     <ScrollView>
         <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="Center">
@@ -19,7 +19,7 @@
             <StackLayout Spacing="20" Padding="0,30,0,0">
                 <!-- Cliente Button -->
                 <Button Text="Cliente"
-
+                        Clicked="buttonCliente"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -30,7 +30,7 @@
 
                 <!-- Fornecedor Button -->
                 <Button Text="Fornecedor"
-                        Clicked="Telafornecedor"
+                        Clicked="buttonFornecedor"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -40,8 +40,8 @@
                         HeightRequest="60" />
 
                 <!-- Matéria-prima Button -->
-                <Button Text="Matéria-prima"
-
+                <Button Text="Materiaprima"
+                        Clicked="buttonMateriaprima"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -52,7 +52,7 @@
 
                 <!-- Setores Button -->
                 <Button Text="Setores"
-       
+                        Clicked="buttonSetores"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
@@ -63,6 +63,7 @@
 
                 <!-- Pedidos Button -->
                 <Button Text="Pedidos"
+                        Clicked="buttonPedidos"
                         BackgroundColor="White"
                         TextColor="Black"
                         BorderColor="Black"
