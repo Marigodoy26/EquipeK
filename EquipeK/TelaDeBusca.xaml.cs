@@ -6,28 +6,29 @@ namespace EquipeK
 {
     public partial class TelaDeBusca : ContentPage
     {
+         Controle.ControleCliente controlecliente = new Controle.ControleCliente();
+
         public TelaDeBusca()
         {
             InitializeComponent();
+            ListaClientes.ItemsSource = controlecliente.LerTodos();
         }
 
         private void VoltarClicked(object sender, EventArgs e)
         {
-            // Handle "Voltar" button click event
-            DisplayAlert("Voltar", "Voltar button clicked", "OK");
+               Application.Current.MainPage = new TelaInicial();
         }
 
         private void CadastrarClicked(object sender, EventArgs e)
         {
-            // Handle "Cadastrar" button click event
-            DisplayAlert("Cadastrar", "Cadastrar button clicked", "OK");
+               Application.Current.MainPage = new TelaCadastro();
         }
 
         private void ContinuarClicked(object sender, EventArgs e)
         {
-            // Handle "Continuar" button click event
-            DisplayAlert("Continuar", "Continuar button clicked", "OK");
+               Application.Current.MainPage = new TelaAtualizacao();
         }
+
         void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
         {
             var page = new TelaCadastro();

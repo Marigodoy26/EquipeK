@@ -16,11 +16,6 @@ namespace EquipeK
             InitializeComponent();
         }
 
-        private void OnVoltarButtonClicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new TelaInicialPage(); // Certifique-se de que esta classe existe e está correta
-        }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -35,17 +30,23 @@ namespace EquipeK
             }
         }
 
-        private void OnAtualizarButtonClicked(object sender, EventArgs e)
+        private void ButtonAtualizar(object sender, EventArgs e)
         {
-            // Handle "Atualizar" button click event
-            DisplayAlert("Atualizar", "Atualizar button clicked", "OK");
+            Application.Current.MainPage = new TelaDeBusca();
         }
 
-        private void OnContinuarButtonClicked(object sender, EventArgs e)
+        private void ButtonContinuar(object sender, EventArgs e)
         {
-            // Handle "Continuar" button click event
-            DisplayAlert("Continuar", "Continuar button clicked", "OK");
+            Application.Current.MainPage = new TelaDeBusca();
         }
+
+        private void ButtonVoltar(object sender, EventArgs e)
+        {
+           Application.Current.MainPage = new TelaInicial();
+        }
+
+        
+
 
         private async Task<bool> ValidateEntriesAsync()
         {
@@ -83,8 +84,8 @@ namespace EquipeK
         }
     }
 
-    // Certifique-se de que esta classe existe e herda de ContentPage
-    internal class TelaInicialPage : ContentPage
+    internal class TelaInicialPage : Page
     {
     }
 }
+

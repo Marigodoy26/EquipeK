@@ -68,7 +68,7 @@
                             CornerRadius="15"
                             WidthRequest="100"
                             HeightRequest="50"
-                            Clicked="OnVoltarButtonClicked"/>
+                            Clicked="ButtonVoltar"/>
 
                     <Button Text="Atualizar"
                             BackgroundColor="White"
@@ -78,7 +78,7 @@
                             CornerRadius="15"
                             WidthRequest="100"
                             HeightRequest="50"
-                            Clicked="OnAtualizarButtonClicked"/>
+                            Clicked="ButtonAtualizar"/>
 
                     <Button Text="Continuar"
                             BackgroundColor="White"
@@ -88,7 +88,7 @@
                             CornerRadius="15"
                             WidthRequest="100"
                             HeightRequest="50"
-                            Clicked="OnContinuarButtonClicked"/>
+                            Clicked="ButtonContinuar"/>
                </StackLayout>
           </StackLayout>
      </ScrollView>

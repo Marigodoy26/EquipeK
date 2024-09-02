@@ -40,5 +40,11 @@ namespace EquipeK
         {
            Application.Current.MainPage = new TelaDeBusca();
         }
+
+        private void ButtonVoltar(object sender, EventArgs e)
+        {
+           Application.Current.MainPage = new TelaInicialPage();
+        }
+
     }
 }

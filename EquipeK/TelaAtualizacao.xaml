@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquipeK.TelaAtualizacao">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Título -->
+            <Frame CornerRadius="100" 
+            Padding="20" 
+            BackgroundColor="Transparent" 
+            BorderColor="Black" 
+            HorizontalOptions="Center">
+                <Label 
+                Text="Fornecedor" 
+                FontSize="Large" 
+                FontAttributes="Bold" 
+                HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Formulário -->
+            <StackLayout 
+                Padding="0" 
+                Spacing="15">
+                
+                <!-- Nome -->
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    Spacing="5">
+
+                    <Image 
+                    Source="user_icon.png" 
+                    WidthRequest="20" 
+                    HeightRequest="20"/>
+
+                    <Label Text="Nome:" 
+                    VerticalOptions="Center"/>
+
+                    <Entry 
+                    Placeholder="Clique para alterar o nome" 
+                    TextColor="Red" 
+                    HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <!-- Email -->
+                <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="5">
+                    <Label 
+                    Text="Email" 
+                    VerticalOptions="Center" 
+                    WidthRequest="100"/>
+
+                    <Entry 
+                    Placeholder="Clique para alterar o email" 
+                    TextColor="Red" 
+                    HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <!-- Telefone -->
+                <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="5">
+
+                    <Label 
+                    Text="Telf" 
+                    VerticalOptions="Center" 
+                    WidthRequest="100"/>
+
+                    <Entry 
+                    Placeholder="Clique para alterar o telefone" 
+                    TextColor="Red" 
+                    HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <!-- CPF -->
+                <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="5">
+                    <Label 
+                    Text="CPF" 
+                    VerticalOptions="Center" 
+                    WidthRequest="100"/>
+                    <Entry
+                    Placeholder="Clique para alterar o CPF" 
+                    TextColor="Red" 
+                    HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <!-- Endereço -->
+                <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="5">
+                    <Label 
+                    Text="End" 
+                    VerticalOptions="Center"
+                     WidthRequest="100"/>
+                    <Entry 
+                    Placeholder="Clique para alterar o endereço"
+                     TextColor="Red" 
+                     HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!-- Botões -->
+            <StackLayout
+             Orientation="Horizontal" 
+             HorizontalOptions="CenterAndExpand" 
+             Spacing="20">
+                <Button Text="Voltar" 
+                WidthRequest="100" 
+                Clicked="OnVoltarClicked"/>
+                
+                <Button Text="Deletar" 
+                WidthRequest="100" 
+                BackgroundColor="Red" 
+                TextColor="White"
+                 Clicked="OnDeletarClicked"/>
+
+                <Button 
+                Text="Continuar" 
+                WidthRequest="100" 
+                Clicked="OnContinuarClicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -71,6 +71,17 @@
                         CornerRadius="20"
                         WidthRequest="200"
                         HeightRequest="60" />
+
+                        <Button Text="Voltar"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="ButtonVoltar"/>
+
             </StackLayout>
         </StackLayout>
     </ScrollView>
