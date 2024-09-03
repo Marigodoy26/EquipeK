@@ -19,36 +19,38 @@
                        BorderColor="Black"
                        BorderWidth="1"
                        HorizontalOptions="Center"/>
+                       
+              <Label x:Name="IdLabel"></Label>
 
-               <Entry x:Name="Nome"
+               <Entry x:Name="NomeEntry"
                       Placeholder="Nome"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="Email"
+               <Entry x:Name="EmailEntry"
                       Placeholder="Email"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="Telefone"
+               <Entry x:Name="TelefoneEntry"
                       Placeholder="Telf"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="CPF"
+               <Entry x:Name="CPFEntry"
                       Placeholder="CPF"
                       BackgroundColor="White"
                       TextColor="Black"
                       WidthRequest="200"
                       HorizontalOptions="Center"/>
 
-               <Entry x:Name="Endereco"
+               <Entry x:Name="EnderecoEntry"
                       Placeholder="End"
                       BackgroundColor="White"
                       TextColor="Black"

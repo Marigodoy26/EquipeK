@@ -12,20 +12,17 @@ namespace EquipeK
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão "Voltar"
-            Navigation.PopAsync();
+            Application.Current.MainPage = new TelaDeBusca();
         }
 
         private void OnDeletarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão "Deletar"
-            DisplayAlert("Deletar", "O fornecedor foi deletado.", "OK");
+            Application.Current.MainPage = new TelaCadastro();
         }
 
         private void OnContinuarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão "Continuar"
-            DisplayAlert("Continuar", "Continuando para a próxima etapa.", "OK");
+            Application.Current.MainPage = new TelaInicial();
         }
     }
 }

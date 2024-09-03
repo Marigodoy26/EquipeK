@@ -1,9 +1,10 @@
+using Controle;
 using Microsoft.Maui.Controls;
 using Modelos;
 using System;
 
 namespace EquipeK
-{
+{ 
     public partial class TelaDeBusca : ContentPage
     {
          Controle.ControleCliente controlecliente = new Controle.ControleCliente();

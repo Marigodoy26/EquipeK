@@ -11,7 +11,7 @@ public class Cliente : Registro
    public string CPF { get; set; }
 
     [BsonId]
-    int Id { get; set; }
+   public int Id { get; set; }
 }
 
      
